@@ -3,7 +3,13 @@ from profil3r.core.colors import Colors
 def print_logo(self):
     print(Colors.OKGREEN + Colors.BOLD + '''
 
-    ____________________Vidura OSINT_________________________
+    
+ \ \    / (_)   | |              
+  \ \  / / _  __| |_   _ _ __    
+   \ \/ / | |/ _` | | | | '__|  
+    \  /  | | (_| | |_| | |      
+     \/   |_|\__,_|\__,_|_|      
+                           
                                        
 ''' + Colors.ENDC)
 
