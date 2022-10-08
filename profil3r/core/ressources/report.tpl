@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Profil3r</title>
+    <title>Vidura</title>
   </head>
 
   <body>
@@ -11,12 +11,12 @@
         <div class="card" style="height:800px;">
             <div class="card title">
                 <div class="card-body">
-                <h3 class="card-title">Profil3r report for <span class="badge badge-success">{{ title }}</span></h3>
-                <p class="card-text"><small class="text-muted">Profiler version {{ version }} - report was generated at {{ time }}</small></p>
+                <h3 class="card-title">Vidura </h3>
                 </div>
             </div>
 
             <section class="container">
+
 
                     <input type="search" class="light-table-filter searchbar" data-table="order-table" placeholder="Filter results">
 
