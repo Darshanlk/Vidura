@@ -7,7 +7,7 @@ from PIL.ExifTags import GPSTAGS, TAGS
 # Helper function
 def create_google_maps_url(gps_coords):            
     dec_deg_lat = convert_decimal_degrees(float(gps_coords["lat"][0]),  float(gps_coords["lat"][1]), float(gps_coords["lat"][2]), gps_coords["lat_ref"])
-    dec_deg_lon = convert_decimal_degrees(float(gps_coords["lon"][0]),  float(gps_coords["lon"][1]), float(gps_coords["lon"][2]), gps_coords["lon_ref"])
+    dec_deg_lon = convert_decimal_degrees(float(gps_coords["lon"][0]),  float                                                                      (gps_coords["lon"][1]), float(gps_coords["lon"][2]), gps_coords["lon_ref"])
     return f"https://maps.google.com/?q={dec_deg_lat},{dec_deg_lon}"
 
 

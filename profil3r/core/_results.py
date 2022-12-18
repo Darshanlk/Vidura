@@ -5,6 +5,7 @@ import instaloader
 from deepface import DeepFace
 import re
 import cv2
+import numpy as np
 
 def print_results(self, element):
     ig = instaloader.Instaloader()
@@ -67,21 +68,16 @@ def print_results(self, element):
                     ig.download_profile(dp , profile_pic_only=True)
 
                     images = [cv2.imread(file) for file in glob.glob(f'{username}/*.jpg')]
-                    # # for files in 
                     
-                    # img2 = cv2.imread(f"../../{username}/*.jpg")
-                    # for img in img2:
-                    #     print(img)
-
-                    # print(images[0],"imggggggggggggggggggggggggggggggggg2")
-                    # print("fucking")
-                    # img2 =  resized_image / 255
-                    result = DeepFace.verify(img1,images[0])
+                    # print(images)
+                    
+                    result = DeepFace.verify(img1,images[0],enforce_detection=False)
                     print("Is same face: ",result["verified"])
+                    
 
-                except:
-                    print("fblink")
-                    # print(error)
+                except(e):
+                    # print("fblink")
+                    print(e)
         
 
             
